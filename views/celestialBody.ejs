@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+     
+</head>
+<body id="body">
+    <h1>Celestial Bodies</h1>
+    <div id="nav"><%- include('partials/nav.ejs') %></div>
+    <br>
+    <img id="planetImg" src="<%= celestialBodyInfo.image%>" width="500">
+
+    <p>&#128301 Description</p>
+    <p><%- celestialBodyInfo.def %></p>
+
+
+
+    <footer> <%- include('partials/footer.ejs') %> </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+
+</head>
+<body id="body">
+    <h1>Earth</h1>
+    <div id="nav"><%- include('partials/nav.ejs') %></div>
+    <br><br>
+
+    <img id="planetImg" src="<%= earthData.image%>" width="500">
+
+    <div id="allPlanetInfo">
+    <p>&#128301 Description: <%= earthData.description %></p>
+    <p>&#127774 Distance from Sun: <%= earthData.distanceFromSun %></p>
+    <p>&#128198 Year Length: <%= earthData.yearLength %> </p>
+    <p>&#127757 One Earth Day: <%= earthData.oneEarthDay %> </p>
+    <p>&#127769 Number of Moons: <%= earthData.moons %> </p>
+    <p>&#128208 Radius: <%= earthData.radius %> </p>
+    </div>
+    <br><br>
+
+    <footer> <%- include('partials/footer.ejs') %> </footer>
+</body>
+</html>

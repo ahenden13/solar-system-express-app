@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+
+</head>
+<body id="body">
+    <h1>Mars</h1>
+    <div id="nav"><%- include('partials/nav.ejs') %></div>
+    <br><br>
+
+    <img id="planetImg" src="https://starwalk.space/gallery/images/mars-the-ultimate-guide/1920x1080.jpg" width="500">
+
+    <div id="allPlanetInfo">
+    <p>&#128301 Description: <%= marsData.description %></p>
+    <p>&#127774 Distance from Sun: <%= marsData.distanceFromSun %></p>
+    <p>&#128198 Year Length: <%= marsData.yearLength %> </p>
+    <p>&#127757 One Earth Day: <%= marsData.oneEarthDay %> </p>
+    <p>&#127769 Number of Moons: <%= marsData.moons %> </p>
+    <p>&#128208 Radius: <%= marsData.radius %> </p>
+    </div>
+    <br><br>
+
+    <footer> <%- include('partials/footer.ejs') %> </footer>
+</body>
+</html>

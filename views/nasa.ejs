@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body id="body">
+    <h1>Nasa's Image of the Day</h1>
+
+    <div id="nav"><%- include('partials/nav.ejs') %></div>
+
+    <h4 id ="date">&#128198 Date: <%= nasaData.date%> </h4>
+    <img id="planetImg" src="<%= nasaData.url%>" id="nasaPic" alt="pic of the day" width="75%">
+    <br><br>
+
+    <div id="nasaForm">
+    <form action="/nasaCustom">
+        <h3> Enter a date below to generate a new image:</h3>
+
+        Select a Month:
+        <select name="month">
+            <option value="01">1</option>
+            <option value="02">2</option>
+            <option value="03">3</option>
+            <option value="04">4</option>
+            <option value="05">5</option>
+            <option value="06">6</option>
+            <option value="07">7</option>
+            <option value="08">8</option>
+            <option value="09">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <br><br>Enter a Day: <input name="day" type="text" placeholder="##"> <br><br>
+        Enter a Year: <input name="year" type="text" placeholder="####"><br><br>
+        <button>Get Image</button>
+        <br><br>
+    </form>
+    </div>
+    <br><br><br><br>
+
+    <footer> <%- include('partials/footer.ejs') %> </footer>
+
+</body>
+</html>

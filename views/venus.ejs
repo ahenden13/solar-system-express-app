@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+
+</head>
+<body id="body">
+    <h1>Venus</h1>
+    <div id="nav"><%- include('partials/nav.ejs') %></div>
+    <br><br>
+
+    <img id="planetImg" src="<%= venusData.image%>" width="500">
+
+    <div id="allPlanetInfo">
+    <p>&#128301 Description: <%= venusData.description %></p>
+    <p>&#127774 Distance from Sun: <%= venusData.distanceFromSun %></p>
+    <p>&#128198 Year Length: <%= venusData.yearLength %> </p>
+    <p>&#127757 One Earth Day: <%= venusData.oneEarthDay %> </p>
+    <p>&#127769 Number of Moons: <%= venusData.moons %> </p>
+    <p>&#128208 Radius: <%= venusData.radius %> </p>
+    </div>
+    <br><br>
+
+    <footer> <%- include('partials/footer.ejs') %> </footer>
+</body>
+</html>

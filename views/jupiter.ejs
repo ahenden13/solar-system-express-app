@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+
+</head>
+<body id="body">
+    <h1>Jupiter</h1>
+    <div id="nav"><%- include('partials/nav.ejs') %></div>
+    <br><br>
+
+    <img id="planetImg" src="https://cdn.britannica.com/84/4284-050-16C7E8C2/Photograph-Jupiter-range-Voyager-1-cloud-bands-February-1-1979.jpg" width="500">
+
+    <div id="allPlanetInfo">
+    <p>&#128301 Description: <%= jupiterData.description %></p>
+    <p>&#127774 Distance from Sun: <%= jupiterData.distanceFromSun %></p>
+    <p>&#128198 Year Length: <%= jupiterData.yearLength %> </p>
+    <p>&#127757 One Earth Day: <%= jupiterData.oneEarthDay %> </p>
+    <p>&#127769 Number of Moons: <%= jupiterData.moons %> </p>
+    <p>&#128208 Radius: <%= jupiterData.radius %> </p>
+    </div>
+    <br><br>
+
+    <footer> <%- include('partials/footer.ejs') %> </footer>
+</body>
+</html>

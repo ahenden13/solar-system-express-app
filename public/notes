@@ -1,0 +1,4 @@
+npm --> node package manager
+npm init -y --> to initialize
+npm install (i) express ejs --> to install express
+node index.mjs --> to start server

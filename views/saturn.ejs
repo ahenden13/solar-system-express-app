@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+
+</head>
+<body id="body">
+    <h1>Saturn</h1>
+    <div id="nav"><%- include('partials/nav.ejs') %></div>
+    <br><br>
+
+    <img id="planetImg" src="<%= saturnData.image%>" width="500">
+
+    <div id="allPlanetInfo">
+    <p>&#128301 Description: <%= saturnData.description %></p>
+    <p>&#127774 Distance from Sun: <%= saturnData.distanceFromSun %></p>
+    <p>&#128198 Year Length: <%= saturnData.yearLength %> </p>
+    <p>&#127757 One Earth Day: <%= saturnData.oneEarthDay %> </p>
+    <p>&#127769 Number of Moons: <%= saturnData.moons %> </p>
+    <p>&#128208 Radius: <%= saturnData.radius %> </p>
+    </div>
+    <br><br>
+
+    <footer> <%- include('partials/footer.ejs') %> </footer></body>
+</html>

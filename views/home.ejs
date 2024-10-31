@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("<%= imgUrl%>");
+            background-size: 100%;
+            text-align: center;
+        }
+    </style>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    <h1>The Solar System</h1>
+    <div id="nav"><%- include('partials/nav.ejs') %></div>
+    <br><br>
+
+    <p id="txt"><b>Welcome to my Solar System website! <br><br>To learn more, use the navigation bar above or use the drop-down menu below. </b></p>
+
+    <div id="homeForm">
+    <form action="/planetInfo">
+        <div id="selectCelestial">Select a Celestial Body:</div>
+        <br>
+        <select id ="selCel" name="planetName">
+            <option value="Comets">Comets</option>
+            <option value="Asteroids">Asteroids</option>
+        </select>
+        <button>Get Info</button>
+    </form>
+    </div>
+
+
+    
+    
+
+
+
+
+
+
+    <footer> <%- include('partials/footer.ejs') %> </footer>
+</body>
+</html>
