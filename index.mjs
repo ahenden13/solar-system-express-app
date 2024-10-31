@@ -5,7 +5,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get('/', async (req, res) => {
-    let url = "https://api.unsplash.com/photos/random/?client_id=IW7wnW-XvpgJXRLEHmNqyjeqaMGWzFljGWl_8iGt6kk&featured=true&query=solar%20system&orientation=landscape";
+    let url = "*confidential api key*;
     let imgInfo = await fetch(url);
     let imgData = await imgInfo.json();
     console.log(imgData);
@@ -18,7 +18,7 @@ app.get('/nasa', async (req, res) => {
     date.setHours(date.getHours() - 24);
     date = date.toISOString().split("T")[0];
     console.log(date);
-    let url = "https://api.nasa.gov/planetary/apod?api_key=9mUzIkhlZCZaOoMfspg7jMmwZCZ4LiRHtkgkambD&date=" + date;
+    let url = "*confidential api key" + date;
     let nasaInfo = await fetch(url);
     let nasaData = await nasaInfo.json();
     console.log(nasaData);
