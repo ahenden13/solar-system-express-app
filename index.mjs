@@ -40,7 +40,7 @@ app.get('/nasaCustom', async (req, res) => {
     date = date.toISOString().split("T")[0];
     console.log(date);
 
-    let url = "https://api.nasa.gov/planetary/apod?api_key=9mUzIkhlZCZaOoMfspg7jMmwZCZ4LiRHtkgkambD&date=" + date;
+    let url = "*confidential api key*" + date;
     let nasaInfo = await fetch(url);
     
     let nasaData = await nasaInfo.json();
